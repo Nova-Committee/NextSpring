@@ -1,0 +1,8 @@
+modLoader = "javafml"
+loaderVersion = "[24,)"
+[[mods]]
+modId = "nextspring"
+version = "1.0.0"
+displayName = "NextSpring"
+authors = "Tapio, Rinko1231"
+description = "Though turned to mud, they'd quicken flowers' birth next spring."
