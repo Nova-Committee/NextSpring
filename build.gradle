@@ -14,7 +14,7 @@ apply plugin: 'maven-publish'
 
 version = '1.15.X-1.0.0'
 group = 'committee.nova.ns' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'NextSpring'
+archivesBaseName = 'NextSpring-Forge'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 //Print out JVM information so that we know what version is running. Extreamly useful for people to know when helping you.
