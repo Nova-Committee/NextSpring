@@ -21,7 +21,7 @@ import java.util.Random;
 
 @Mod(NextSpring.MODID)
 public class NextSpring {
-    public static final String MODID = "quickplant";
+    public static final String MODID = "nextspring";
     public static final ForgeConfigSpec COMMON_CONFIG;
     public static final ForgeConfigSpec.IntValue refreshInterval;
     public static final ForgeConfigSpec.IntValue expireTime;
