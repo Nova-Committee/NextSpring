@@ -1,0 +1,10 @@
+modLoader = "javafml"
+loaderVersion = "[39,)"
+license = "AGPL v3"
+[[mods]]
+modId = "nextspring"
+version = "1.0.0"
+displayName = "QuickPlant"
+credits = ""
+authors = "Tapio, Rinko1231"
+description = "Though turned to mud, they'd quicken flowers' birth next spring."
