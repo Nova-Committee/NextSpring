@@ -7,7 +7,7 @@ import net.minecraft.world.World;
 
 public class Utilities {
     public static boolean tryCatalyze(World world, BlockPos pos) {
-        final Block block = world.getBlockAt(pos);
+        final Block block = world.getBlockState(pos).getBlock();
         if (!(block instanceof Growable)) return false;
         final Growable growable = (Growable) block;
         if (!growable.canGrow(world, pos, world.getBlockState(pos), world.isClient)) return false;
