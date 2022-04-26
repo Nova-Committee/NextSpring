@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "nextspring",
+  "version": "${version}",
+  "name": "NextSpring",
+  "description": "Though turned to mud, they'd quicken flowers' birth next spring.",
+  "authors": [
+    "Tapio",
+    "Rinko1231"
+  ],
+  "contact": {},
+  "license": "AGPL-3.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "committee.nova.ns.NextSpring"
+    ]
+  },
+  "mixins": [
+    "ns.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "*"
+  }
+}
