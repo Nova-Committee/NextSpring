@@ -1,0 +1,11 @@
+{
+  "id": "nextspring",
+  "name": "NextSpring",
+  "authors": [
+    "Tapio",
+    "Rinko1231"
+  ],
+  "listeners": [
+    "committee.nova.ns.NextSpring"
+  ]
+}
