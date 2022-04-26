@@ -9,9 +9,13 @@ public class Utilities {
         final Block block = world.method_3774(x, y, z);
         if (!(block instanceof Growable)) return false;
         final Growable growable = (Growable) block;
-        if (!growable.method_6460(world, x, y, z, world.isClient)) return false;
-        if (!world.isClient && growable.method_6461(world, world.random, x, y, z))
-            growable.method_6462(world, world.random, x, y, z);
+        try {
+            if (!growable.method_6460(world, x, y, z, world.isClient)) return false;
+            if (!world.isClient && growable.method_6461(world, world.random, x, y, z))
+                growable.method_6462(world, world.random, x, y, z);
+        } catch (Exception e) {
+            return false;
+        }
         return true;
     }
 }
