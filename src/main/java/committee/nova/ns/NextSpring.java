@@ -14,14 +14,11 @@ public class NextSpring implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		try {
-			config = Configs.loadOrCreate(new Id("novaCommittee", "NextSpring"),
+			config = Configs.loadOrCreate(new Id("nextspring", "NextSpring-Common"),
 					ConfigTemplate.builder()
 							.addContainer("common", container -> {
 								container.addDataEntry("refreshInterval", 100);
-								container.addDataEntry("expireTime", 6000);
 								container.addDataEntry("influencedByBiome", true);
-								container.addDataEntry("possibilityMultiplier", 1.0F);
-								container.addDataEntry("respectVanillaCriteria", true);
 							})
 							.build());
 		} catch (IOException e) {

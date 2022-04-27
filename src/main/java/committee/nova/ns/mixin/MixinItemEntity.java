@@ -1,5 +1,6 @@
 package committee.nova.ns.mixin;
 
+import committee.nova.ns.util.ConfigUtil;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.ItemInstance;
@@ -34,7 +35,7 @@ public abstract class MixinItemEntity extends Entity {
 		if (item.itemId != ItemType.dyePowder.id) return;
 		if (item.getDamage() != 15) return;
 		if (this.age == 0) return;
-		if (this.age % 100 != 0) return;
+		if (this.age % ConfigUtil.refreshInterval() != 0) return;
 		if (!shouldCatalyze() || !catalyze()) return;
 		final ItemInstance newStack = stack.copy();
 		newStack.count--;
@@ -46,6 +47,7 @@ public abstract class MixinItemEntity extends Entity {
 	}
 
 	private boolean shouldCatalyze() {
+		if (!ConfigUtil.influencedByBiome()) return true;
 		final Biome biome = level.getBiomeSource().getBiome((int) x, (int) z);
 		final Random r = level.rand;
 		final float humidity = biome.canRain() ? 0.6F : 0F;
