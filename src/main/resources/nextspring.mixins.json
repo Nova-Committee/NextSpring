@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "committee.nova.ns.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinItemEntity"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
