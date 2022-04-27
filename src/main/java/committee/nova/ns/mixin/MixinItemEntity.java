@@ -31,13 +31,12 @@ public abstract class MixinItemEntity extends Entity {
 
 	@Inject(method = "tick", at = @At("HEAD"), cancellable = true)
 	public void onTick(CallbackInfo ci) {
-		final ItemInstance stack = this.item;
 		if (item.itemId != ItemType.dyePowder.id) return;
 		if (item.getDamage() != 15) return;
 		if (this.age == 0) return;
 		if (this.age % ConfigUtil.refreshInterval() != 0) return;
 		if (!shouldCatalyze() || !catalyze()) return;
-		final ItemInstance newStack = stack.copy();
+		final ItemInstance newStack = item.copy();
 		newStack.count--;
 		if (newStack.count <= 0) {
 			this.remove();
