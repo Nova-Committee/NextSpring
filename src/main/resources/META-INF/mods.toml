@@ -1,0 +1,12 @@
+modLoader = "javafml"
+loaderVersion = "[41,)"
+license = "AGPL v3"
+[[mods]]
+modId = "nextspring"
+version = "${file.jarVersion}"
+displayName = "NextSpring"
+credits = ""
+authors = [
+    "Tapio", "Rinko1231"
+]
+description = ""
