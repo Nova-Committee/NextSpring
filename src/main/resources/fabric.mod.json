@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "nextspring",
+  "version": "${version}",
+  "name": "NextSpring",
+  "description": "",
+  "authors": [
+    "Rinko1231",
+    "Tapio"
+  ],
+  "contact": {},
+  "license": "AGPL-3.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "committee.nova.nextspring.NextSpring"
+    ]
+  },
+  "mixins": [
+    "nextspring.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "*"
+  }
+}
