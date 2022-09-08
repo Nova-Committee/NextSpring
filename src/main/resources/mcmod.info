@@ -1,10 +1,10 @@
 [
     {
-        "modid": "examplemod",
-        "name": "ExampleMod",
-        "description": "Example legacy forge mod.",
+        "modid": "nextspring",
+        "name": "NextSpring",
+        "description": "Though turned to mud, they'd quicken flowers' birth next spring.",
         "version": "${version}",
         "mcversion": "1.6.4",
-        "authorList": ["Author"]
+        "authorList": ["Tapio"]
     }
 ]
