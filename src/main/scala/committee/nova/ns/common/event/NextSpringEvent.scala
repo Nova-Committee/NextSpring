@@ -26,7 +26,7 @@ class NextSpringEvent {
     val itemEntity = event.entityItem
     val stack = itemEntity.getEntityItem
     if (stack.getItem != Item.rottenFlesh) return
-    if (itemEntity.ticksExisted >= CommonConfig.expireTime) return
+    if (itemEntity.age >= CommonConfig.expireTime) return
     if (!catalyze(itemEntity)) {
       event.extraLife = CommonConfig.refreshInterval
       event.setCanceled(true)
