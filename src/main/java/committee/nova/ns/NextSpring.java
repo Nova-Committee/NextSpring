@@ -33,7 +33,7 @@ public class NextSpring {
 
     static {
         final ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
-        builder.comment("QuickPlant Configuration");
+        builder.comment("NextSpring Configuration");
         refreshInterval = builder.comment("The time of the refresh interval. After each interval, the rotten flesh item will try to catalyze the plant.")
                 .defineInRange("refreshInterval", 100, 20, 6000);
         expireTime = builder.comment("The time before the item entity's expiration. The item entity whose age is larger than this will be cleared, just like what happens in vanilla.")
